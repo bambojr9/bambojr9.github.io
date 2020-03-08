@@ -1,0 +1,27 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+    max-width: 550px !important;
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        color: #363636;
+        font-weight: 700;
+        font-family: 'Lobster Two', ;
+        span {
+            color: #ff7730;
+        }
+    }
+    img {
+        margin-bottom: 1.5rem;
+    }
+}

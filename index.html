@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="io... " />
+    <meta name="description" content="..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Food & Restaurant</title>
+
+    <!-- Cdn for gg font -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lobster+Two:400,400i,700,700i&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+    <!-- Cdn for fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Cdn for bs4.4.1 -->
+    <link rel="stylesheet" href="./vendors/Bootstrap4.4.1/bootstrap.min.css">
+    <!-- link for animate -->
+    <link rel="stylesheet" href="./vendors/animate/animate.css">
+    <!-- link for Owl-carousel -->
+    <link rel="stylesheet" href="./vendors/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendors/owl carousel/owl.theme.default.min.css">
+    <!-- link for Magnific-Popup-master -->
+    <link rel="stylesheet" href="./vendors/Magnific-Popup-master/magnific-popup.css">
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Cdn jquery& cdn f DatetimePicker-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+    <link href="/vendors/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="/vendors/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+            <div class="container navbar__main">
+                <a class="navbar-brand mr-5" href="#">
+                    <img src="./img/logo.png" class="img-fluid navbar__logo" alt="Logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar__main--icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="others-option">
+                        <a class="mr-4" href="tel:0987654321">
+                            <i class="fas fa-phone-volume mr-3"></i>+84987654321
+                        </a>
+                        <a href="#" class="btn">BOOK TABLE →</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Carousel -->
+        <div id="slide-custom-bg" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slide-custom-bg" data-slide-to="0" class="active"></li>
+                <li data-target="#slide-custom-bg" data-slide-to="1"></li>
+                <li data-target="#slide-custom-bg" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active ">
+                    <img data-src="./images/background2.jpg" src="./img/img-slide-2.jpg" class="img-fluid" alt="First slide">
+                    <div class="hero-slider-text">
+                        <span>Welcome to Asahi</span>
+                        <h1>Restaurant Fresh Dishes For Home
+                            <span>Desh lover</span>
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis.</p>
+                        <a href="#" class="default-btn">BOOK TABLE  <i class="mr-2">→</i>   </a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img data-src="./images/background3.jpg" src="./img/img-slide-3.jpg" class="img-fluid" alt="Second slide">
+                    <div class="hero-slider-text">
+                        <span>Welcome to Asahi</span>
+                        <h1>The best way to celebrate the some
+                            <span>delicious food.</span>
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis.</p>
+                        <a href="#" class="default-btn">BOOK TABLE  <i class="mr-2">→</i></a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img data-src="./images/background1.jpg" src="./img/img-slide-1.jpg" class="img-fluid" alt="Third slide">
+                    <div class="hero-slider-text">
+                        <span>Welcome to Asahi</span>
+                        <h1>Good food is to be enjoyed food very
+                            <span>beautiful in itse</span>
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis.</p>
+                        <a href="#" class="default-btn">BOOK TABLE  <i class="mr-2">→</i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#slide-custom-bg" role="button" data-slide="prev">
+                <span aria-hidden="true">←</span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slide-custom-bg" role="button" data-slide="next">
+                <span aria-hidden="true">→</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--End  Carousel -->
+    </header>
+    <!-- Start Service-->
+    <div class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="single-service text-center">
+                        <div class="service-icon">
+                            <i class="fab fa-accusoft"></i>
+                        </div>
+                        <h3>
+                            Best Food <span>Quality</span>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="single-service text-center">
+                        <div class="service-icon">
+                            <i class="fab fa-accusoft"></i>
+                        </div>
+                        <h3>
+                            Magical <span>Atmosphere</span>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 mb-5">
+                    <div class="single-service text-center">
+                        <div class="service-icon">
+                            <i class="fab fa-accusoft"></i>
+                        </div>
+                        <h3>
+                            Low Costing <span>Food</span>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Service-->
+    <!-- Start our-histry-->
+    <div class="our-histry">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="history-title">
+                        <h2>A History Has Written For Asahi Explore
+                            <span>more Our Story</span>
+                        </h2>
+                        <img src="./img/shape-1.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+                        <a href="#" class="default-btn" style="padding: 1rem 2rem 1rem 1.5rem;">OUR HISTRY <span class="ml-2">→</span>  </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-history">
+                        <img src="./img/story-1.jpg" class="img-story-1 img-fluid">
+                        <img src="./img/story-2.jpg" class="img-story-2 img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End our-histry-->
+    <!-- Start delicious-menus-->
+    <div class="delicious-menus">
+        <div class="container">
+            <div class="delicious-menus-wrap">
+                <div class="section-title text-center">
+                    <h2>
+                        Check Our <span>Delicious Menu</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-1.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>Grilled American</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-2.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>Carpacio Speacial</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-3.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>Insalata Rucola</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-4.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>Seasonal Soup</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-5.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>Vitello Tomato</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-6.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>Oatmeal Cookie</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-7.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>AntiPasti Mixed</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-8.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>Crema di Pomodoro</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                        <div class="single-delicious-menu">
+                            <div class="menu-list-img">
+                                <img src="./img/delicious-menu-9.jpg">
+                                <div class="recommend">
+                                    <a href="#">recommended</a>
+                                </div>
+                            </div>
+                            <div class="delicious-menu-text">
+                                <h3>Insalata Rucola</h3>
+                                <p>Red peppers, roasted garlic, lemon slices.</p>
+                                <span class="lg-text">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row see-full-menu">
+                    <div class="col-lg-8">
+                        <p>The menu will be avail able for all or our coustomer please check button all menu</p>
+                    </div>
+                    <div class="col-lg-4 see-full-menu--btn">
+                        <a href="#" class="default-btn">SEE FULL MENU  <i class="mr-2">→</i>   </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End delicious-menus-->
+    <!-- Start speacial-offers-->
+    <div class="speacial-offers">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>
+                    Our Daily <span>Speacial Offers</span>
+                </h2>
+                <img src="./img/shape-1.png">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-speacial-offers">
+                        <div class="menu-img">
+                            <img src="./img/speacial-offers-1.jpg" class="img-fluid">
+                            <div class="price"><span>$30</span></div>
+                        </div>
+                        <div class="item-text">
+                            <h3>Broduos Grenti menso</h3>
+                            <p> Lorem ipsum dolor siamonsectetur adipiscing elit, sed do</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-speacial-offers">
+                        <div class="menu-img">
+                            <img src="./img/speacial-offers-2.jpg" class="img-fluid">
+                            <div class="price"><span>$15</span></div>
+                        </div>
+                        <div class="item-text">
+                            <h3>Broduos Grenti menso</h3>
+                            <p> Lorem ipsum dolor siamonsectetur adipiscing elit, sed do</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-speacial-offers">
+                        <div class="menu-img">
+                            <img src="./img/speacial-offers-3.jpg" class="img-fluid">
+                            <div class="price"><span>$60</span></div>
+                        </div>
+                        <div class="item-text">
+                            <h3>Almond Baked Brie</h3>
+                            <p> Lorem ipsum dolor siamonsectetur adipiscing elit, sed do</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-speacial-offers">
+                        <div class="menu-img">
+                            <img src="./img/speacial-offers-4.jpg" class="img-fluid">
+                            <div class="price"><span>$50</span></div>
+                        </div>
+                        <div class="item-text">
+                            <h3>Tuscan Flatbread</h3>
+                            <p> Lorem ipsum dolor siamonsectetur adipiscing elit, sed do</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End speacial-offers-->
+    <!-- Start offer-->
+    <div class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="offer__title">
+                        <span>
+                        Lunch Time Offer
+                    </span>
+                        <h2>We offer a bit less
+                            <span>at Midday</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                        <a href="#" class="default-btn">ORDER NOW <i class="mr-2">→</i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-end">
+                    <div class="offer__logo hi">
+                        <p>30%</p>
+                        <span>Off</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End offer-->
+
+    <!-- Start Counter-->
+    <div class="counterUp">
+        <div class="container">
+            <div id="counter" class="row text-center">
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <div class="counter-num">
+                        <span class="timer" data-count="99">99</span>
+                    </div>
+                    <div class="counter-text">Beverages</div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <div class="counter-num">
+                        <span class="timer" data-count="105">105</span>
+                    </div>
+                    <div class="counter-text">Food items</div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <div class="counter-num">
+                        <span class="timer" data-count="83">83</span>
+                    </div>
+                    <div class="counter-text">Cooks</div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <div class="counter-num">
+                        <span class="timer" data-count="163">163</span>
+                    </div>
+                    <div class="counter-text">Original dhishes</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Counter-->
+    <!--Book Table-->
+    <div class="book-table">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 p-0 ">
+                    <div class="book-table__form">
+                        <div class="container-fluid">
+                            <div class="book-table__form--bookForm text-center">
+                                <div class="book-form-wrap">
+                                    <h3>BOOK YOUR TABLE</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <select name="select" id="select">
+                                            <option selected class="2">Number Of People</option>
+                                            <option value="1 ">1</option>
+                                            <option value="2 ">2</option>
+                                            <option value="3 ">3</option>
+                                            <option value="4 ">4</option>
+                                            <option value="5 ">5</option>
+                                            <option value="10 ">10</option>
+                                            <option value="15 ">15</option>
+                                            <option value="20 ">20</option>
+                                            <option value="25 ">25</option>
+                                        </select>
+                                            <span class="input-group-addon">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input size="16" type="text" class="form-control" id="datetime" placeholder="Date & Time" value="Date & Time" readonly>
+                                            <!--js datetime-->
+                                            <script type="text/javascript">
+                                                $("#datetime").datetimepicker({
+                                                    format: 'mm-dd-yyyy hh:ii'
+                                                });
+                                            </script>
+                                            <!--END js__datetime-->
+                                            <span class="input-group-addon clock">
+                                            <i class="far fa-clock "></i>
+                                        </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="select" id="select">
+                                            <option selected class="2">Number Of Table</option>
+                                            <option value="1 ">1</option>
+                                            <option value="2 ">2</option>
+                                            <option value="3 ">3</option>
+                                            <option value="4 ">4</option>
+                                            <option value="5 ">5</option>
+                                            <option value="6 ">10</option>
+                                            <option value="7">15</option>
+                                            <option value="8">20</option>
+                                            <option value="9">25</option>
+                                        </select>
+                                            <span class="input-group-addon users">
+                                            <i class="fas fa-users"></i>
+                                        </span>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Number Phone" value="Number Phone">
+                                            <span class="input-group-addon phone">
+                                            <i class="fas fa-phone"></i>
+                                        </span>
+
+                                        </div>
+
+                                        <button type="submit" class="default-btn">FIND A TABLE</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0">
+                    <div class="contact-info">
+                        <div class="contact-info__textbox">
+                            <h3>Our contract info</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adip suspendisse ultrices gravida. Risus commodo svel facilisis.</p>
+                            <ul>
+                                <li class="mb-2">
+                                    <a href="tel:+0987654321"> <i class="fas fa-phone"></i>+84 987-654-321</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+0987654321"> <i class="fas fa-phone"></i>+84 987-654-321</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="mb-2">
+                                    <a href="mailto:O@gmail.com"><i class="fas fa-envelope"></i>Jr9876@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:O@gmail.com"><i class="fas fa-envelope"></i>Jr5432@icloud.com</a>
+                                </li>
+                            </ul>
+                            <span>
+                            <i class="fas fa-map-marker-alt"></i> 99 Bay Meadows Drive Woodstock, GA5234, United States
+                       </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Book Table-->
+    <!--Feedback-->
+    <div class="feedback">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>
+                    People Say <span>About Us!</span>
+                </h2>
+                <img style="position:relative" src="./img/shape-1.png">
+                <!--Slide-->
+            </div>
+            <div id="feedback-slide" class="carousel slide mx-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#feedback-slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#feedback-slide" data-slide-to="1"></li>
+                    <li data-target="#feedback-slide" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-8 offset-md-2 offset-sm-2">
+                                <img src="./img/feedback-1.jpg" class="img-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisist
+                                    amet, consectetur adipiscing elit, sed do eiusm.
+                                </p>
+                                <h3>Anadson steve</h3>
+                                <span>Co-founder </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- het mot item -->
+                    <div class="carousel-item ">
+                        <div class="row">
+
+                            <div class="col-sm-8 offset-md-2 offset-sm-2">
+                                <img src="./img/feedback-2.jpg" class="img-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisist
+                                    amet, consectetur adipiscing elit, sed do eiusm.
+                                </p>
+                                <h3>Janadhon doe </h3>
+                                <span>Co-founder </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- het mot item -->
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-sm-8 offset-md-2 offset-sm-2">
+                                <img src="./img/feedback-3.jpg" class="img-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisist
+                                    amet, consectetur adipiscing elit, sed do eiusm.</p>
+                                <h3>Wanino doms</h3>
+                                <span>Co-founder </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- het mot item -->
+
+                </div>
+            </div>
+            <!-- het slide -->
+        </div>
+    </div>
+    <!--End Feedback-->
+    <!--Blog-->
+    <div class="blog">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>
+                    From <span>Our Blog</span>
+                </h2>
+                <img src="./img/shape-1.png">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.
+                </p>
+            </div>
+            <div class="row" style="margin-top:5rem">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <a href="">
+                            <img src="./img/blog-1.jpg" class="img-fluid">
+                        </a>
+                        <div class="blog__text">
+                            <p>
+                                By
+                                <a href="">Admin</a> / On May 05, 2020
+                            </p>
+                            <h3><a href="">A new restaurant in town that Looking think that Do care for new</a></h3>
+                            <a href="#" class="read-more">Read More<i class="mr-2">→</i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <a href="">
+                            <img src="./img/blog-2.jpg" class="img-fluid">
+                        </a>
+                        <div class="blog__text">
+                            <p>
+                                By
+                                <a href="">Admin</a> / On April 23, 2020
+                            </p>
+                            <h3><a href="">A new restaurant in town that Looking think that Do care for new</a></h3>
+                            <a href="#" class="read-more">Read More<i class="mr-2">→</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                    <div class="single-blog">
+                        <a href="">
+                            <img src="./img/blog-3.jpg" class="img-fluid">
+                        </a>
+                        <div class="blog__text">
+                            <p>
+                                By
+                                <a href="">Admin</a> / On August 21, 2020
+                            </p>
+                            <h3><a href="">A new restaurant in town that Looking think that Do care for new</a></h3>
+                            <a href="#" class="read-more">Read More<i class="mr-2">→</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Blog-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer single-footer--1">
+                        <a href="">
+                            <img src="./img/logo.png" class="img-fluid" alt="">
+                        </a>
+                        <p>Sign up to our newsletter to get the latest food item news.</p>
+                        <form>
+                            <input type="email" class="email" placeholder="Your email" name="email">
+                            <input type="submit" class="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="single-footer single-footer--2">
+                        <h3>
+                            USEFUL LINKS
+                        </h3>
+                        <ul class="footer-menu">
+                            <li> <a href=""><i class="mr-2">→</i> Home</a> </li>
+                            <li> <a href=""><i class="mr-2">→</i> About Us</a> </li>
+                            <li> <a href=""><i class="mr-2">→</i> Blog</a> </li>
+                            <li> <a href=""><i class="mr-2">→</i> Contact Us</a> </li>
+                            <li> <a href=""><i class="mr-2">→</i> Privacy Policy</a> </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-footer single-footer--3">
+                        <h3>
+                            ADDRESS
+                        </h3>
+                        <ul class="footer-contact">
+                            <li style="line-height: 2.1;"> <a href=""><i class="mr-2">→</i> 44 Canal Center Plaza #200, Alexandria, VA 22314, USA</a> </li>
+                            <li> <a href=""><i class="mr-2">→</i> Hotline: 1900 – 123 456 78</a> </li>
+                            <li> <a href=""><i class="mr-2">→</i> Email: Jr9876@gmail.com</a> </li>
+                            <li> <a href=""><i class="mr-2">→</i> Email: Jr5432@icloud.com</a> </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer single-footer--4">
+                        <h3>
+                            OPENING HOURS
+                        </h3>
+                        <ul class="footer-right">
+                            <li class=""><i class="mr-2">→</i>Monday: <span>9.00 AM - 22.00 PM </span> </li>
+                            <li><i class="mr-2">→</i>Tuesday: <span>8.00 AM - 22.00 PM </span> </li>
+                            <li><i class="mr-2">→</i>Wednesday: <span>8.00 AM - 22.00 PM </span> </li>
+                            <li><i class="mr-2">→</i>Thursday: <span>9.00 AM - 22.00 PM </span> </li>
+                            <li><i class="mr-2">→</i>Friday: <span>9.00 AM - 22.00 PM </span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-3">
+                    <ul class="social-list">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="copy-right">
+                        <p>
+                            © 2020 All Rights Reserved</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3">
+                    <ul class="bank-card">
+                        <li>
+                            <a href="#">
+                                <img src="./img/payment-1.png" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/payment-2.png" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/payment-3.png" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/payment-4.png" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <!-- Navigation__checkbox-->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <div class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="/redirect?Id=Ok7QNCdcSHCUf3tyR7o94w%3d%3d" class="navigation__link">Log In</a></li>
+                <li class="navigation__item"><a href="/redirect?Id=Ok7QNCdcSHCUf3tyR7o94w%3d%3d" class="navigation__link">Sign Up</a></li>
+                <li class="navigation__item"><a href="/redirect?Id=Ok7QNCdcSHCUf3tyR7o94w%3d%3d" class="navigation__link">FAQ</a></li>
+                <li class="navigation__item"><a href="/redirect?Id=Ok7QNCdcSHCUf3tyR7o94w%3d%3d" class="navigation__link">Log Out</a></li>
+                <li class="navigation__item"><a href="/redirect?Id=Ok7QNCdcSHCUf3tyR7o94w%3d%3d" class="navigation__link">Enroll form</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--End  Navigation__checkbox-->
+
+
+    <!-- javascript -->
+    <!-- js for jquery -->
+    <script src="./vendors/jquery/jquery-3.4.1.min.js"></script>
+    <!-- js for bs4     -->
+    <script src="./vendors/Bootstrap4.4.1/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/Bootstrap4.4.1/bootstrap.min.js"></script>
+    <!-- js for wow -->
+    <script src="./vendors/WOW/wow.min.js "></script>
+    <!-- script for slogan -->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- script for coutup number -->
+    <script src="./vendors/Waypoints/jquery.waypoints.min.js "></script>
+    <script src="./vendors/counterup/inview.min.js "></script>
+    <script type="text/javascript ">
+        function inviewExample() {
+            var $example = $('#counter');
+            var inview;
+
+            if ($example.length) {
+                inview = new Waypoint.Inview({
+                    element: $('#counter')[0],
+                    entered: function(direction) {
+                        $('.timer').each(function() {
+                            var $this = $(this);
+                            var val = $(this).data('count');
+                            jQuery({
+                                Counter: 0
+                            }).animate({
+                                Counter: val
+                            }, {
+                                duration: 1000,
+                                easing: 'swing',
+                                step: function() {
+                                    $this.text(Math.ceil(this.Counter));
+                                }
+                            });
+                        });
+                    }
+                })
+            }
+        }
+        $(window).on('load', function() {
+            inviewExample();
+        });
+    </script>
+    <!-- My scripts-->
+    <script type="text/javascript " src="./js/scripts.js "></script>
+
+
+</body>
+
+</html>

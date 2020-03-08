@@ -1,0 +1,24 @@
+.default-btn {
+    font-family: 'Barlow', sans-serif;
+    color: #fff;
+    background-color: #ff7730;
+    padding: 1rem 4.5rem 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    i {
+        margin-right: .5rem!important;
+        background-color: #7c1109;
+        padding: 0.1rem 1rem 0.4rem;
+        position: absolute;
+        top: 4px;
+        transform: translateX(2rem);
+        transition: .7s;
+    }
+    &:hover {
+        i {
+            transition: .7s;
+            transform: translateX(0.99rem);
+        }
+    }
+}
