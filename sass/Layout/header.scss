@@ -1,78 +1,6 @@
 header {
     height: 58rem;
     overflow: hidden;
-    .navbar {
-        background-color: #15171a;
-        padding: 0;
-        &__main {
-            color: white;
-            .navbar-nav {
-                li {
-                    padding: 2.2rem 1rem;
-                    .nav-link {
-                        color: #fff;
-                        font-size: 1.4rem;
-                        &:hover {
-                            color: $color-secondary-light
-                        }
-                    }
-                }
-                .active .nav-link {
-                    color: $color-secondary-light;
-                }
-            }
-            .others-option {
-                a {
-                    color: #fff;
-                    i {
-                        padding: 5px 10px;
-                        border: 1px solid;
-                        border-radius: 50%;
-                    }
-                }
-                .btn {
-                    font-size: 1.5rem;
-                    border: 1px solid #fff;
-                    padding: 0.7rem 2rem;
-                    background: linear-gradient(to right, #eb883b, #f26900);
-                    &:hover {
-                        background: linear-gradient(to right, #55c57a, #f9461d);
-                    }
-                }
-            }
-            //create icon
-            &--icon {
-                position: relative;
-                margin-top: 0rem;
-                &,
-                &::before,
-                &::after {
-                    width: 3rem;
-                    height: .3rem;
-                    background-color: #fff;
-                    display: inline-block;
-                }
-                &::before,
-                &::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    transition: all .2s;
-                }
-                &::before {
-                    top: -.8rem;
-                }
-                &::after {
-                    top: .8rem;
-                }
-            }
-            .navbar-toggler {
-                width: 4.5rem;
-                height: 4.2rem;
-                border-color: white;
-            }
-        }
-    }
     .carousel-control-prev {
         padding: .5rem 1rem 1rem 1rem;
         width: 4rem;
@@ -136,6 +64,80 @@ header {
                     font-size: 1.7rem;
                 }
             }
+        }
+    }
+}
+
+//nav-main
+.navbar {
+    background-color: #15171a;
+    padding: 0;
+    &__main {
+        color: white;
+        .navbar-nav {
+            li {
+                padding: 2.2rem 1rem;
+                .nav-link {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    &:hover {
+                        color: #ffb900;
+                    }
+                }
+            }
+            .active .nav-link {
+                color: #ffb900;
+            }
+        }
+        .others-option {
+            a {
+                color: #fff;
+                i {
+                    padding: 5px 10px;
+                    border: 1px solid;
+                    border-radius: 50%;
+                }
+            }
+            .btn {
+                font-size: 1.5rem;
+                border: 1px solid #fff;
+                padding: 0.7rem 2rem;
+                background: linear-gradient(to right, #eb883b, #f26900);
+                &:hover {
+                    background: linear-gradient(to right, #55c57a, #f9461d);
+                }
+            }
+        }
+        //create icon
+        &--icon {
+            position: relative;
+            margin-top: 0rem;
+            &,
+            &::before,
+            &::after {
+                width: 3rem;
+                height: .3rem;
+                background-color: #fff;
+                display: inline-block;
+            }
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                transition: all .2s;
+            }
+            &::before {
+                top: -.8rem;
+            }
+            &::after {
+                top: .8rem;
+            }
+        }
+        .navbar-toggler {
+            width: 4.5rem;
+            height: 4.2rem;
+            border-color: white;
         }
     }
 }

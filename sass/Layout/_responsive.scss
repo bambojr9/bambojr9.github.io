@@ -5,17 +5,10 @@
             width: 100%;
         }
     }
+    //Start Header
     header {
         height: 50rem;
         overflow: hidden;
-        .navbar {
-            &__main {
-                padding: 0 1rem !important;
-            }
-            &__logo {
-                width: 9rem;
-            }
-        }
         .carousel-inner {
             .carousel-item {
                 img {
@@ -56,6 +49,15 @@
             margin-left: 1rem;
         }
     }
+    .navbar {
+        &__main {
+            padding: 0 1rem !important;
+        }
+        &__logo {
+            width: 9rem;
+        }
+    }
+    //end header
     .service {
         padding-top: 5rem;
         padding-bottom: 2rem;
