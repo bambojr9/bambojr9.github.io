@@ -400,8 +400,13 @@
                     .phone {
                         @extend .clock;
                     }
+                    .text-file {
+                        top: 0.5rem;
+                        left: 1.9rem;
+                    }
                 }
-                input[type="text"] {
+                input[type="text"],
+                textarea {
                     width: 100%;
                     color: #fff;
                     font-size: 1.4rem;
@@ -751,7 +756,7 @@
         right: .5rem;
         background-image: radial-gradient($color-primary, $color-primary-dark);
         z-index: 5555;
-        transition: transform 1s;
+        transition: transform .8s;
         //  transform: scale(80);
     }
     &__nav {
@@ -762,7 +767,7 @@
         z-index: 8888;
         opacity: 1;
         width: 0%;
-        transition: all 1s;
+        transition: all .8s;
     }
     &__list {
         list-style: none;

@@ -1,0 +1,37 @@
+.error {
+    height: 100vh;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #a6dce8;
+    &__wrap {
+        width: 100%;
+        height: 100%;
+        display: table;
+        &--t {
+            display: table-cell;
+            vertical-align: middle;
+            img {
+                max-width: 30rem;
+                width: 100%;
+            }
+            h3 {
+                margin: 30px 0 0;
+                font-family: "Barlow", sans-serif;
+                color: red;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            p {
+                margin: 2rem 0 3rem 0;
+                font-size: 1.9rem;
+            }
+            .btn {
+                padding: 1.5rem 4rem;
+                color: #fff;
+                font-weight: 600;
+                border: 1px solid #a6dce8;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

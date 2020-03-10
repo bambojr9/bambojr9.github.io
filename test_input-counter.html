@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="io... " />
+    <meta name="description" content="..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Food & Restaurant</title>
+
+    <!-- Cdn for gg font -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lobster+Two:400,400i,700,700i&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+    <!-- Cdn for fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Cdn for bs4.4.1 -->
+    <link rel="stylesheet" href="./vendors/Bootstrap4.4.1/bootstrap.min.css">
+    <!-- link for animate -->
+    <link rel="stylesheet" href="./vendors/animate/animate.css">
+    <!-- link for Owl-carousel -->
+    <link rel="stylesheet" href="./vendors/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendors/owl carousel/owl.theme.default.min.css">
+    <!-- link for Magnific-Popup-master -->
+    <link rel="stylesheet" href="./vendors/Magnific-Popup-master/magnific-popup.css">
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Cdn jquery& cdn f DatetimePicker-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+    <link href="/vendors/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="/vendors/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- start plus -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="input-counter">
+                    <div class="plus">+</div>
+                    <input type="text" value="0">
+                    <div class="minus">-</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="input-counter">
+                    <div class="plus">+</div>
+                    <input type="text" value="0">
+                    <div class="minus">-</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="input-counter">
+                    <div class="plus">+</div>
+                    <input type="text" value="0">
+                    <div class="minus">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- plus - minus -->
+    <script>
+        $(function() {
+            if (typeof counter == 'undefined') {
+                counter = 0;
+            }
+            $('.plus').click(function() {
+                counter++;
+                $(this).siblings('input').val(counter);
+                return counter;
+
+            });
+            $('.minus').click(function() {
+                counter--;
+                $(this).siblings('input').val(counter);
+                return counter;
+            });
+
+        });
+    </script>
+    <!-- End js Plus -minus -->
+
+
+    <!--End Body-->
+
+
+    <!--End  Navigation__checkbox-->
+
+
+    <!-- javascript -->
+    <!-- js for jquery -->
+    <script src="./vendors/jquery/jquery-3.4.1.min.js"></script>
+    <!-- js for bs4     -->
+    <script src="./vendors/Bootstrap4.4.1/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/Bootstrap4.4.1/bootstrap.min.js"></script>
+    <!-- js for wow -->
+    <script src="./vendors/WOW/wow.min.js "></script>
+    <!-- script for slogan -->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- script for coutup number -->
+    <script src="./vendors/Waypoints/jquery.waypoints.min.js "></script>
+    <script src="./vendors/counterup/inview.min.js "></script>
+    <script type="text/javascript ">
+        function inviewExample() {
+            var $example = $('#counter');
+            var inview;
+
+            if ($example.length) {
+                inview = new Waypoint.Inview({
+                    element: $('#counter')[0],
+                    entered: function(direction) {
+                        $('.timer').each(function() {
+                            var $this = $(this);
+                            var val = $(this).data('count');
+                            jQuery({
+                                Counter: 0
+                            }).animate({
+                                Counter: val
+                            }, {
+                                duration: 1000,
+                                easing: 'swing',
+                                step: function() {
+                                    $this.text(Math.ceil(this.Counter));
+                                }
+                            });
+                        });
+                    }
+                })
+            }
+        }
+        $(window).on('load', function() {
+            inviewExample();
+        });
+    </script>
+    <!-- My scripts-->
+    <script type="text/javascript " src="./js/scripts.js "></script>
+
+
+</body>
+
+</html>

@@ -134,9 +134,9 @@
         }
     }
     .book-table {
-        .book-table__form {
+        &__form {
             height: auto;
-            .book-table__form--bookForm {
+            &--bookForm {
                 padding: 4rem 0 3rem 0;
                 .book-form-wrap {
                     padding: 2rem;

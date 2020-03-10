@@ -25,3 +25,15 @@ body {
         margin-bottom: 1.5rem;
     }
 }
+
+//btn-nav
+.btn {
+    font-size: 1.5rem;
+    border-radius: 0;
+    padding: 0.7rem 2rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #eb883b, #f26900);
+    &:hover {
+        background: linear-gradient(to right, #55c57a, #ffb900);
+    }
+}

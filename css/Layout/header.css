@@ -75,13 +75,6 @@ header {
         padding: 5px 10px;
         border: 1px solid;
         border-radius: 50%; }
-    .navbar__main .others-option .btn {
-      font-size: 1.5rem;
-      border: 1px solid #fff;
-      padding: 0.7rem 2rem;
-      background: linear-gradient(to right, #eb883b, #f26900); }
-      .navbar__main .others-option .btn:hover {
-        background: linear-gradient(to right, #55c57a, #f9461d); }
     .navbar__main--icon {
       position: relative;
       margin-top: 0rem; }

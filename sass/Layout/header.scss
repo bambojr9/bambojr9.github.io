@@ -98,15 +98,6 @@ header {
                     border-radius: 50%;
                 }
             }
-            .btn {
-                font-size: 1.5rem;
-                border: 1px solid #fff;
-                padding: 0.7rem 2rem;
-                background: linear-gradient(to right, #eb883b, #f26900);
-                &:hover {
-                    background: linear-gradient(to right, #55c57a, #f9461d);
-                }
-            }
         }
         //create icon
         &--icon {

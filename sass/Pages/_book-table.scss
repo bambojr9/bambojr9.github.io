@@ -1,0 +1,42 @@
+.book-table-main .book-table {
+    &__form {
+        background-color: #fff;
+        h3 {
+            margin-bottom: 5rem;
+        }
+        background-image:none;
+        background-color: #fff;
+        .book-form-wrap {
+            background-color: #fff;
+            h3 {
+                color: #363636;
+            }
+            .form-group {
+                color: #d4d4d4;
+                select {
+                    color: #848484;
+                    background-color: #fff;
+                    border: 1px solid grey;
+                    &:hover {
+                        border: 1px solid #ff7730;
+                    }
+                }
+                input[type="text"],
+                textarea {
+                    padding: .75rem 5.3rem;
+                    border: 1px solid grey;
+                    background-color: #fff;
+                    color: #848484;
+                    &:hover {
+                        border: 1px solid #ff7730;
+                    }
+                }
+                #datetime {
+                    padding: 1.92rem 5.3rem;
+                    color: #848484;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
