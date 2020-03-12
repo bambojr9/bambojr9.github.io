@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="io... " />
+    <meta name="description" content="..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Food & Restaurant</title>
+
+    <!-- Cdn for gg font -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lobster+Two:400,400i,700,700i&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+    <!-- Cdn for fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Cdn for bs4.4.1 -->
+    <link rel="stylesheet" href="./vendors/Bootstrap4.4.1/bootstrap.min.css">
+    <!-- link for animate -->
+    <link rel="stylesheet" href="./vendors/animate/animate.css">
+    <!-- link for Owl-carousel -->
+    <link rel="stylesheet" href="./vendors/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendors/owl carousel/owl.theme.default.min.css">
+    <!-- link for Magnific-Popup-master -->
+    <link rel="stylesheet" href="./vendors/Magnific-Popup-master/magnific-popup.css">
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Cdn jquery& cdn f DatetimePicker-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+    <link href="/vendors/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="/vendors/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- start modal -->
+    <!--Modal: Login / Register Form-->
+
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Modal cascading tabs-->
+                <div class="modal-content__wrap">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs " role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel-1" role="tab">
+                                <i class="fas fa-user mr-1"></i> Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel-2" role="tab">
+                                <i class="fas fa-user-plus mr-1"></i> Register
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel-1" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="modal-body--form">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput10" class="form-control">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput10" class="lbl-1">Your email</label>
+                                </div>
+
+                                <div class="modal-body--form">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput11" class="form-control ">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button id="btnLogin" class="btn ">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                        <!--/.Panel 1-->
+
+                        <!--Panel 2-->
+                        <div class="tab-pane fade" id="panel-2" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="modal-body--form">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                                </div>
+
+                                <div class="modal-body--form">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                                </div>
+
+                                <div class="modal-body--form">
+                                    <i class="fas fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                                </div>
+
+                                <div class="text-center form-sm mt-2">
+                                    <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                                </div>
+
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                    <p id="btnLogin" class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 2-->
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: Login / Register Form-->
+
+    <div class="text-center">
+        <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">Launch
+      Modal LogIn/Register</a>
+    </div>
+
+    <!-- end - modal -->
+
+
+    <h1> Thẻ 1 </h1>
+    <h1> Thẻ 2 </h1>
+    <h1> Thẻ 3 </h1>
+    <h1> Thẻ 4 </h1>
+    <h1> Thẻ 5 </h1>
+
+
+
+
+    <!--Js for Modal-Form-->
+    <script>
+        $(function() {
+            //start js
+            //modal
+            $("#modalLRForm").modal({
+                backdrop: "static"
+            });
+            //end modal
+
+            // $(".form-control").click(function() {
+            // $(this).siblings('label').addClass('active1');
+            // $(this).siblings("label").animate({
+            //     marginTop: '-3rem',
+            //     fontSize: '1.3rem'
+            // });
+            //});
+            //body
+            $('body .form-control').click(function() {
+                $("label").addClass("active1");
+            });
+
+
+            // $("body").click(function() {
+            //     $("label").not('.notSelected').animate({
+            //         marginTop: '3rem',
+            //         fontSize: '1.3rem'
+            //     });
+            // });
+
+            //end js
+        });
+    </script>
+    <!--End  Js for Modal-Form-->
+
+
+
+
+
+
+
+    <!-- javascript -->
+    <!-- js for jquery -->
+    <script src="./vendors/jquery/jquery-3.4.1.min.js"></script>
+    <!-- js for bs4     -->
+    <script src="./vendors/Bootstrap4.4.1/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/Bootstrap4.4.1/bootstrap.min.js"></script>
+    <!-- js for wow -->
+    <script src="./vendors/WOW/wow.min.js "></script>
+    <!-- script for slogan -->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- script for coutup number -->
+    <script src="./vendors/Waypoints/jquery.waypoints.min.js "></script>
+    <script src="./vendors/counterup/inview.min.js "></script>
+    <script type="text/javascript ">
+        function inviewExample() {
+            var $example = $('#counter');
+            var inview;
+
+            if ($example.length) {
+                inview = new Waypoint.Inview({
+                    element: $('#counter')[0],
+                    entered: function(direction) {
+                        $('.timer').each(function() {
+                            var $this = $(this);
+                            var val = $(this).data('count');
+                            jQuery({
+                                Counter: 0
+                            }).animate({
+                                Counter: val
+                            }, {
+                                duration: 1000,
+                                easing: 'swing',
+                                step: function() {
+                                    $this.text(Math.ceil(this.Counter));
+                                }
+                            });
+                        });
+                    }
+                })
+            }
+        }
+        $(window).on('load', function() {
+            inviewExample();
+        });
+    </script>
+    <!-- My scripts-->
+    <script type="text/javascript " src="./js/scripts.js "></script>
+
+
+</body>
+
+</html>

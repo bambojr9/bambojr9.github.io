@@ -48,24 +48,28 @@ body {
   background-color: #15161c; }
   .service .single-service {
     padding: 3rem;
-    background-color: #1e1f25; }
+    background-color: #1e1f25;
+    transition: all .8s;
+    -webkit-transition: 0.8s; }
     .service .single-service .service-icon {
-      background-color: #888888;
-      border-radius: 50%;
       color: #55c57a;
+      border-radius: 50%;
       font-size: 3rem;
-      height: 6rem;
-      line-height: 6rem;
       text-align: center;
       top: 0;
-      width: 6rem;
       margin-bottom: 2rem;
       margin-left: auto;
       margin-right: auto; }
       .service .single-service .service-icon i {
+        position: relative;
+        width: 6.8rem;
+        height: 6.8rem;
+        line-height: 6.8rem;
+        color: #ffb900;
+        background-color: #737581;
+        border-radius: 50%;
         transition: 0.5s;
-        -webkit-transition: 0.5s;
-        position: relative; }
+        -webkit-transition: 0.5s; }
         .service .single-service .service-icon i::after {
           position: absolute;
           content: "";
@@ -73,18 +77,22 @@ body {
           left: 0;
           right: 0;
           bottom: 0;
+          margin: -8px;
           border-radius: 50%;
-          margin: -2.2rem -1.8rem -2.1rem -1.8rem;
-          border: 2px dashed #888888;
-          z-index: 999;
+          border: 2px dashed #d2d2d2;
+          z-index: 1;
           animation: spin 50s infinite linear;
-          -webkit-animation: spin 50s infinite linear; }
-      .service .single-service .service-icon:hover {
-        background-color: #ffb900; }
-        .service .single-service .service-icon:hover i {
-          color: #fff; }
-          .service .single-service .service-icon:hover i::after {
-            border: 2px dashed #ffb900; }
+          -webkit-animation: spin 50s infinite linear;
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s; }
+    .service .single-service:hover {
+      transform: translateY(-1rem);
+      border: .5px solid #ffb900; }
+      .service .single-service:hover i {
+        background-color: #ffb900;
+        color: #fff; }
+        .service .single-service:hover i::after {
+          border: 2px dashed #ffb900; }
     .service .single-service h3 {
       font-family: "Lobster Two";
       color: #fff;
@@ -1263,5 +1271,69 @@ header {
         font-weight: 600;
         border: 1px solid #a6dce8;
         font-size: 1.8rem; }
+
+.modal {
+  margin-top: 15%;
+  overflow: visible !important; }
+  .modal-content__wrap .nav {
+    z-index: 999;
+    margin: -3rem 2rem 0rem 2rem;
+    background-color: #0277bd;
+    padding: 1.1rem;
+    border-radius: 5px; }
+    .modal-content__wrap .nav-item {
+      width: 50%;
+      text-align: center;
+      transition: all .2s; }
+      .modal-content__wrap .nav-item:hover {
+        background-color: #2bbbad; }
+      .modal-content__wrap .nav-item .active {
+        color: #fff;
+        background-color: #0a85cc;
+        border: none;
+        border-radius: 5px; }
+    .modal-content__wrap .nav-link {
+      color: #fff;
+      padding: .8rem 1.6rem;
+      border: none;
+      font-size: 1.6rem; }
+      .modal-content__wrap .nav-link:hover {
+        border: none; }
+  .modal-content__wrap .tab-content {
+    padding-top: 2rem; }
+    .modal-content__wrap .tab-content .modal-body {
+      padding: 2.4rem 3.2rem; }
+      .modal-content__wrap .tab-content .modal-body--form {
+        position: relative;
+        margin-top: 2.4rem;
+        margin-bottom: 4.8rem; }
+        .modal-content__wrap .tab-content .modal-body--form i {
+          font-size: 2.4rem; }
+        .modal-content__wrap .tab-content .modal-body--form .form-control {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 1.6rem;
+          width: calc(100% - 3.2rem);
+          margin-left: 3.2rem;
+          padding-top: 1.2rem;
+          padding-bottom: .8rem;
+          border: 0;
+          border-bottom: 1px solid #ced4da; }
+          .modal-content__wrap .tab-content .modal-body--form .form-control:focus {
+            font-size: 1.6rem;
+            color: #495057;
+            letter-spacing: .7px;
+            font-weight: 410;
+            padding-bottom: .8rem;
+            border: 0;
+            border-bottom: 1px solid #4285f4;
+            box-shadow: 0 1px 0 0 #4285f4; }
+        .modal-content__wrap .tab-content .modal-body--form label {
+          font-size: 1.6rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-left: 3.2rem; }
 
 /*# sourceMappingURL=style.css.map */

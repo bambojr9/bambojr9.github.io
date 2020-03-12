@@ -5,23 +5,27 @@
     .single-service {
         padding: 3rem;
         background-color: #1e1f25;
+        transition: all .8s;
+        -webkit-transition: 0.8s;
         .service-icon {
-            background-color: #888888;
-            border-radius: 50%;
             color: $color-tertiary-light;
+            border-radius: 50%;
             font-size: 3rem;
-            height: 6rem;
-            line-height: 6rem;
             text-align: center;
             top: 0;
-            width: 6rem;
             margin-bottom: 2rem;
             margin-left: auto;
             margin-right: auto;
             i {
+                position: relative;
+                width: 6.8rem;
+                height: 6.8rem;
+                line-height: 6.8rem;
+                color: #ffb900;
+                background-color: #737581;
+                border-radius: 50%;
                 transition: 0.5s;
                 -webkit-transition: 0.5s;
-                position: relative;
                 &::after {
                     position: absolute;
                     content: "";
@@ -29,21 +33,25 @@
                     left: 0;
                     right: 0;
                     bottom: 0;
+                    margin: -8px;
                     border-radius: 50%;
-                    margin: -2.2rem -1.8rem -2.1rem -1.8rem;
-                    border: 2px dashed #888888;
-                    z-index: 999;
+                    border: 2px dashed #d2d2d2;
+                    z-index: 1;
                     animation: spin 50s infinite linear;
                     -webkit-animation: spin 50s infinite linear;
+                    -webkit-transition: all 0.5s;
+                    transition: all 0.5s;
                 }
             }
-            &:hover {
+        }
+        &:hover {
+            transform: translateY(-1rem);
+            border: .5px solid #ffb900;
+            i {
                 background-color: #ffb900;
-                i {
-                    color: #fff;
-                    &::after {
-                        border: 2px dashed #ffb900;
-                    }
+                color: #fff;
+                &::after {
+                    border: 2px dashed #ffb900;
                 }
             }
         }
