@@ -9,7 +9,8 @@
 @import './Pages/about';
 @import './Pages/book-table';
 @import './Pages/404.scss';
-//modal
+@import './Pages/shop';
+//Modal: Login / Register Form
 .modal {
     margin-top: 15%;
     overflow: visible !important;
@@ -94,4 +95,4 @@
     }
 }
 
-//end modal
+//end  Login / Register Form

@@ -283,6 +283,10 @@
             color: #fff;
             margin-bottom: 3rem;
         }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
     &__logo {
         color: #ffffff;
@@ -713,11 +717,14 @@
         list-style: none;
         li {
             margin-right: 2rem;
+            a {
+                color: #f19d07;
+            }
         }
     }
     .copy-right {
         text-align: center;
-        color: $color-tertiary-light;
+        color: #f19d07;
         p {
             margin: 0;
         }

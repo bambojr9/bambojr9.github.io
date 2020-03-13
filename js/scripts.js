@@ -1,5 +1,22 @@
 $(function() {
-    //scroll change& add class
+    // plus - minus 
+    if (typeof counter == 'undefined') {
+        counter = 0;
+    };
+    $('.plus').click(function() {
+        counter++;
+        $(this).siblings('input').val(counter);
+        return counter;
+
+    });
+    $('.minus').click(function() {
+        counter--;
+        $(this).siblings('input').val(counter);
+        return counter;
+    });
+    //End  Plus-minus
+
+    //Start scroll change& add class
     $(window).scroll(function() {
 
         if ($(window).scrollTop() > 400) {
@@ -10,8 +27,8 @@ $(function() {
             $('.btn--up').removeClass('show');
         }
     });
-    // scroll top
 
+    //Start scroll top
     $('.btn--up').on('click', function(e) {
         e.preventDefault();
         $('html,body').animate({
@@ -19,7 +36,7 @@ $(function() {
         }, 700);
     });
 
-    // scroll to section
+    //Start scroll to section Id
     $('a[href*="#"]')
         .not('[href="#"]')
         .not('[href="#0"]')
