@@ -591,12 +591,18 @@
         &:hover {
             transition: .7s;
             transform: translateY(-1rem);
+            .blog__text h3 a {
+                transition: all .7s;
+                color: #ffb900;
+            }
         }
         .blog__text {
             margin-top: 1.5rem;
             margin-bottom: 1.5rem;
             p {
                 a {
+                    font-weight: 500;
+                    color: #3d3d3d;
                     text-decoration: none;
                 }
             }
@@ -615,6 +621,8 @@
             .read-more {
                 text-decoration: none;
                 position: relative;
+                color: #ffb900;
+                font-weight: 400;
                 i {
                     position: absolute;
                     margin-right: 0.5rem !important;
@@ -622,6 +630,8 @@
                     transition: .5s;
                 }
                 &:hover {
+                    transition: .3s;
+                    color: #3d3d3d;
                     i {
                         transition: .7s;
                         transform: translateX(1rem);
@@ -688,6 +698,7 @@
                 a {
                     color: #fff;
                     &:hover {
+                        transition: .3s;
                         color: #eb883b;
                     }
                 }
@@ -720,6 +731,10 @@
             a {
                 color: #f19d07;
             }
+            &:hover {
+                transition: .3s;
+                transform: scale(1.2);
+            }
         }
     }
     .copy-right {
@@ -735,10 +750,14 @@
         list-style: none;
         justify-content: flex-end;
         li {
+            margin-left: 2rem;
             img {
                 width: 3rem;
             }
-            margin-left:2rem;
+            &:hover {
+                transition: .3s;
+                transform: scale(1.2);
+            }
         }
     }
 }

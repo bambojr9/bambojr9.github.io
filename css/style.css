@@ -547,10 +547,15 @@ body {
     .blog .single-blog:hover {
       transition: .7s;
       transform: translateY(-1rem); }
+      .blog .single-blog:hover .blog__text h3 a {
+        transition: all .7s;
+        color: #ffb900; }
     .blog .single-blog .blog__text {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem; }
       .blog .single-blog .blog__text p a {
+        font-weight: 500;
+        color: #3d3d3d;
         text-decoration: none; }
       .blog .single-blog .blog__text h3 {
         margin-bottom: 1.5rem; }
@@ -564,15 +569,20 @@ body {
           text-decoration: none; }
       .blog .single-blog .blog__text .read-more {
         text-decoration: none;
-        position: relative; }
+        position: relative;
+        color: #ffb900;
+        font-weight: 400; }
         .blog .single-blog .blog__text .read-more i {
           position: absolute;
           margin-right: 0.5rem !important;
           padding: 0.1rem 1rem 0.4rem;
           transition: .5s; }
-        .blog .single-blog .blog__text .read-more:hover i {
-          transition: .7s;
-          transform: translateX(1rem); }
+        .blog .single-blog .blog__text .read-more:hover {
+          transition: .3s;
+          color: #3d3d3d; }
+          .blog .single-blog .blog__text .read-more:hover i {
+            transition: .7s;
+            transform: translateX(1rem); }
 
 .footer {
   padding-top: 8rem;
@@ -618,6 +628,7 @@ body {
       .footer .single-footer ul li a {
         color: #fff; }
         .footer .single-footer ul li a:hover {
+          transition: .3s;
           color: #eb883b; }
   .footer .single-footer .footer-right span {
     float: right; }
@@ -637,6 +648,9 @@ body {
       margin-right: 2rem; }
       .footer-bottom .social-list li a {
         color: #f19d07; }
+      .footer-bottom .social-list li:hover {
+        transition: .3s;
+        transform: scale(1.2); }
   .footer-bottom .copy-right {
     text-align: center;
     color: #f19d07; }
@@ -651,6 +665,9 @@ body {
       margin-left: 2rem; }
       .footer-bottom .bank-card li img {
         width: 3rem; }
+      .footer-bottom .bank-card li:hover {
+        transition: .3s;
+        transform: scale(1.2); }
 
 .navigation__checkbox {
   display: none; }
@@ -1384,6 +1401,11 @@ header {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .menu-section .single-menu-item {
     padding: 1rem; } }
+.page-blog .single-blog {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1); }
+  .page-blog .single-blog .blog__text {
+    padding: 2rem; }
+
 .modal {
   margin-top: 15%;
   overflow: visible !important; }
